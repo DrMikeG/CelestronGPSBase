@@ -4,6 +4,14 @@
    This sample code demonstrates just about every built-in operation of TinyGPS++ (TinyGPSPlus).
    It requires the use of SoftwareSerial, and assumes that you have a
    4800-baud serial GPS device hooked up on pins 4(rx) and 3(tx).
+
+  I have a 9600 baud serial GPS device (Neo-6m) hooked up to pins D3 and D4.
+  There is a 10Kohm pullup from 5V for D4.
+  D3 has a voltage divider to ground to take 5V down to 3.3V
+
+  I have to use the lower right USB port in this laptop, which shows up as Com4.
+  I'm using an arduino nano, ATmega328, Programmer is irrelevant.
+   
 */
 static const int RXPin = 4, TXPin = 3;
 static const uint32_t GPSBaud = 9600;
